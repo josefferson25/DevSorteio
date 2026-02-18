@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevSorteio • Moderno</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <!-- Ícone do dado (fonte gratuita: Bootstrap Icons) -->
+      <img
+        src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/dice-6.svg"
+        alt="Ícone de dado"
+        class="dice-icon"
+      />
+
+      <h1>Sortear Número</h1>
+
+      <div class="inputs-wrapper">
+        <input
+          type="number"
+          id="min"
+          class="input-field"
+          placeholder="Mínimo"
+          value="5"
+        />
+        <input
+          type="number"
+          id="max"
+          class="input-field"
+          placeholder="Máximo"
+          value="20"
+        />
+      </div>
+
+      <button id="sortearBtn">SORTEAR</button>
+
+      <!-- Área onde o resultado será exibido -->
+      <div class="result-card">
+        <span id="resultado">—</span>
+      </div>
+
+      <p class="hint">* Os valores mínimo e máximo são inclusivos.</p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
